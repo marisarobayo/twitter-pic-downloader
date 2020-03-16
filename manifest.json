@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+	"name": "Twitter Pic Downloader",
+	"version": "0.4.1",
+	"description": "Download Twitter pictures from all opened tabs by username.",
+	"icons": {
+	    "48": "icons/twitter-48.png"
+	},
+	"background": {
+        "scripts": ["background.js"]
+    },
+	"browser_action":{
+		"default_icon": "icons/twitter-48.png",
+		"default_title": "Twitter Pic Downloader",
+		"default_popup": "popup/download_pics.html"
+	},
+	"content_scripts":[{
+		"matches": ["*://twitter.com/*/status/*"],
+		"js": ["pageScript.js"]
+	}],
+	"permissions": [
+		"downloads",
+		"tabs"
+	]
+}

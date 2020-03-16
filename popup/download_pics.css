@@ -1,0 +1,18 @@
+html, body {
+  width: 250px;
+  font-family: Georgia, "Cambria", serif;
+}
+.general{
+	padding: 2px;
+	margin: 0px;
+}
+.centered{
+	text-align: center;
+}
+
+.title{
+	margin: 0px;
+	padding: 10px;
+	/*background: rgb(13, 125, 229);
+	color: #fff;*/
+}
